@@ -4,7 +4,8 @@ class Artist
   attr_accessor :name
   attr_reader :songs
   
-  include Memorable
+  extend Memorable
+  extend FancyDance::ClassMethods
 
   @@artists = []
 
